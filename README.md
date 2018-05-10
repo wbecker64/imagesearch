@@ -1,10 +1,10 @@
 # Image Search
 
-This project is part of freecodecamp challenge.
+This project is part of freecodecamp challenge (https://www.freecodecamp.org/challenges/image-search-abstraction-layer).
 
 ## Start server
 
-Run `npm start` to start the server.
+Run `npm start` to start the server locally.
 
 ## Live
 
