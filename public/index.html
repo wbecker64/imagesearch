@@ -1,0 +1,99 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            Image Search Abstraction Layer
+        </title>
+        <meta content="Image Search Abstraction Layer" name="description"/>
+        <meta content="wbecker64" name="author"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet prefetch"/>
+    </head>
+</html>
+<body>
+    <div class="container-fluid">
+        <img alt="My Face" src="https://avatars3.githubusercontent.com/u/1614479?v=4"/>
+        <p>
+            <a href="mailto:wbecker64@gmail.com">
+                <i class="fa fa-envelope fa-fw">
+                </i>
+            </a>
+            <a href="https://github.com/wbecker64" target="_blank">
+                <i class="fa fa-github fa-fw">
+                </i>
+            </a>
+            <a href="https://www.linkedin.com/in/william-becker-151b102/" target="_blank">
+                <i class="fa fa-linkedin">
+                </i>
+            </a>
+            <a href="http://codepen.io/wbecker64" target="_blank">
+                <i class="fa fa-codepen">
+                </i>
+            </a>
+            <a href="http://www.freecodecamp.com/wbecker64" target="_blank">
+                <i class="fa fa-fire fa-fw">
+                </i>
+            </a>
+        </p>
+        <p>
+            Created by William Becker (wbecker64).
+        </p>
+        <h1 class="header">
+            FreeCodeCamp : Image Search Abstraction Layer
+        </h1>
+        <blockquote>
+            <p>
+                User stories:
+            </p>
+            <ul>
+                <li>
+                    I can get the image URLs, alt text and page urls for a set of images relating to a given search string.
+                </li>
+                <li>
+                    I can paginate through the responses by adding a ?offset=2 parameter to the URL.
+                </li>
+                <li>
+                    I can get a list of the most recently submitted search strings.
+                </li>
+            </ul>
+        </blockquote>
+    </div>
+    <h3>
+        Example :
+    </h3>
+    <code>
+        https://imagesearch.herokuapp.com/api/imagesearch/flowers?offset=2
+    </code>
+    <br/>
+    <h3>
+        Output example:
+    </h3>
+    <code>
+        [
+            {
+                "url":"http://images.shopflowers.net/images/products/VL_711250.jpg","snippet":"Sarasota Florists - Flowers in Sarasota FL - Flowers By Fudgie On ...",
+                "thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgpeavAeJQLPiP4PcUEsz8trNkcw3zn8qsf2JKF1mrNg2TlB2MBXIau3w",
+                "context":"http://www.flowersbyfudgie.com/"
+            }
+            ...
+        ]
+    </code>
+    <h3>
+        Usage:
+    </h3>
+    <code>
+        https://imagesearch.herokuapp.com/api/latest/imagesearch
+    </code>
+    <h3>
+        Output example:
+    </h3>
+    <code>
+        [
+            {
+                "term":"flowers","when":"2018-5-10 10:26:36"
+            }
+            ...
+        ]
+    </code>
+</body>
