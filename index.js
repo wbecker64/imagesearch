@@ -8,7 +8,7 @@ var request = require("request");
 var http = require("http");
 var app = express();
 const GoogleImages = require('google-images');
-const client = new GoogleImages('todo', 'todo');
+const client = new GoogleImages(process.env.CSE_ID, process.env.API_KEY);
 
 var COLLECTION = "user_requests";
 
